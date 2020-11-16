@@ -66939,49 +66939,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/Static lazy recursive ^\\.\\/.*$":
-/*!************************************************************!*\
-  !*** ./resources/js/Static lazy ^\.\/.*$ namespace object ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./": [
-		"./resources/js/Static/index.tsx",
-		0
-	],
-	"./index": [
-		"./resources/js/Static/index.tsx",
-		0
-	],
-	"./index.tsx": [
-		"./resources/js/Static/index.tsx",
-		0
-	]
-};
-function webpackAsyncContext(req) {
-	if(!__webpack_require__.o(map, req)) {
-		return Promise.resolve().then(function() {
-			var e = new Error("Cannot find module '" + req + "'");
-			e.code = 'MODULE_NOT_FOUND';
-			throw e;
-		});
-	}
-
-	var ids = map[req], id = ids[0];
-	return __webpack_require__.e(ids[1]).then(function() {
-		return __webpack_require__.t(id, 7);
-	});
-}
-webpackAsyncContext.keys = function webpackAsyncContextKeys() {
-	return Object.keys(map);
-};
-webpackAsyncContext.id = "./resources/js/Static lazy recursive ^\\.\\/.*$";
-module.exports = webpackAsyncContext;
-
-/***/ }),
-
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -67007,7 +66964,7 @@ var app = document.getElementById('app');
 Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__["InertiaApp"], {
   initialPage: JSON.parse(app.dataset.page),
   resolveComponent: function resolveComponent(name) {
-    return __webpack_require__("./resources/js/Static lazy recursive ^\\.\\/.*$")("./".concat(name)).then(function (module) {
+    return __webpack_require__("./resources/js/components/app lazy recursive ^\\.\\/.*$")("./".concat(name)).then(function (module) {
       return module["default"];
     });
   }
@@ -67057,6 +67014,45 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/app lazy recursive ^\\.\\/.*$":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/app lazy ^\.\/.*$ namespace object ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./app": [
+		"./resources/js/components/app/app.tsx",
+		0
+	],
+	"./app.tsx": [
+		"./resources/js/components/app/app.tsx",
+		0
+	]
+};
+function webpackAsyncContext(req) {
+	if(!__webpack_require__.o(map, req)) {
+		return Promise.resolve().then(function() {
+			var e = new Error("Cannot find module '" + req + "'");
+			e.code = 'MODULE_NOT_FOUND';
+			throw e;
+		});
+	}
+
+	var ids = map[req], id = ids[0];
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__.t(id, 7);
+	});
+}
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "./resources/js/components/app lazy recursive ^\\.\\/.*$";
+module.exports = webpackAsyncContext;
 
 /***/ }),
 

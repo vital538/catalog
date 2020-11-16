@@ -8,7 +8,7 @@ const app = document.getElementById('app')
 render(
     <InertiaApp
         initialPage={JSON.parse(app.dataset.page)}
-        resolveComponent={name => import(`./Static/${name}`).then(module => module.default)}
+        resolveComponent={name => import(`./components/app/${name}`).then(module => module.default)}
     />,
     app
 )

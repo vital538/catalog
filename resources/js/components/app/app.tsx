@@ -1,6 +1,6 @@
 import React from "react";
 
-const Index = () => {
+const App = () => {
     let foo: string = "React";
     const bar: string = "TypeScript";
 
@@ -10,5 +10,4 @@ const Index = () => {
         </h1>
     );
 };
-
-export default Index;
+export default App;
